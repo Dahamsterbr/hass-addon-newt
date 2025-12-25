@@ -15,7 +15,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: Dahamsterbr
+          username: dahamsterbr
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish
         uses: home-assistant/builder@master
@@ -24,4 +24,4 @@ jobs:
             --amd64 \
             --aarch64 \
             --target newt \
-            --docker-hub ghcr.io/Dahamsterbr
+            --docker-hub ghcr.io/dahamsterbr
